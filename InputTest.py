@@ -1,3 +1,7 @@
+#Jennifer Guy
+#InputTest.py
+#This program gets user input and uses it to determine if they made the honor roll and or dean's list
+
 print("Please give last name, or type 'ZZZ' to quit")
 lastname = input()
 if lastname == "ZZZ":
