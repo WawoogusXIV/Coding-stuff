@@ -1,10 +1,10 @@
 class Vehicle:
     def __init__(self, vehicle_type):
         self.vehicle_type = vehicle_type
-
+        
 class Automobile(Vehicle):
     def __init__(self, year, make, model, doors, roof):
-        super().__init__("car")   # Always store "car" as vehicle type
+        super().__init__("car")
         self.year = year
         self.make = make
         self.model = model
@@ -24,12 +24,12 @@ def main():
 
     print("\nVehicle Information")
     print("-------------------")
-    print(f"Vehicle type: {car.vehicle_type}")
-    print(f"Year: {car.year}")
-    print(f"Make: {car.make}")
-    print(f"Model: {car.model}")
-    print(f"Number of doors: {car.doors}")
-    print(f"Type of roof: {car.roof}")
-    
+    print("Vehicle type: " + car.vehicle_type)
+    print("Year: " + car.year)
+    print("Make: " + car.make)
+    print("Model: " + car.model)
+    print("Number of doors: " + car.doors)
+    print("Type of roof: " + car.roof)
+
 if __name__ == "__main__":
     main()
