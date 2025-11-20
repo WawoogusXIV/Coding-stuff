@@ -20,5 +20,6 @@ def get_odds():
                 print(x)
                 return
 
-# Call the function
 get_odds()
+
+#This one actually took me a while, crazy.

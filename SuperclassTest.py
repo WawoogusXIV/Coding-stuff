@@ -22,7 +22,7 @@ def main():
 
     car = Automobile(year, make, model, doors, roof)
 
-    print("\nVehicle Information")
+    print("Vehicle Information")
     print("-------------------")
     print("Vehicle type: " + car.vehicle_type)
     print("Year: " + car.year)
@@ -33,3 +33,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#Admission of guilt, I used AI to touch up my code a bit since it wasn't working
+#Turns out it was something about underscores???
+#First time using superclasses, would have thought I'd do it sooner since I've been coding as a hobby for 11 years
