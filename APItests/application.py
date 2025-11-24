@@ -1,6 +1,7 @@
 from flask import Flask
-app = Flask(__name__)
+from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
+app = Flask(__name__)
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
@@ -43,3 +44,12 @@ def add_drink():
     db.session.commit()
 
     return {'id:': book.id}
+
+@app.route('/Books/<id>', methods=['DELETE'])
+def delete_book(id):
+    book = Book.query.get(id)
+    if book is None:
+        return {"Error": "Not Found"}
+    db.session.delete(book)
+    db.session.commit()
+    return {"message": "Byeeee <3"}
